@@ -1,0 +1,9 @@
+body{
+background: lightblue;
+}
+.navbar{
+border-radius:0;
+}
+.navbar-brand{
+font-family:cursive;
+}

@@ -1,0 +1,16 @@
+{% extends 'song/base.html'%}
+{% block title %}Album details
+{% endblock %}
+{% block body %}
+<img src="{{album.album_logo.url}}">
+
+<h2>{{album.album_title}}</h2>
+<h3>{{ album.artist }}</h3>
+
+<!-- to simply display list of songs in the album -->
+<ul>
+    {% for PlaySong in album.playsong_set.all %}
+    <li>{{PlaySong.song_title}} </li>
+    {% endfor %}
+</ul>
+{% endblock %}
