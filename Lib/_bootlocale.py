@@ -7,6 +7,7 @@ Don't import directly from third-party code; use the `locale` module instead!
 import sys
 import _locale
 
+
 if sys.platform.startswith("win"):
     def getpreferredencoding(do_setlocale=True):
         if sys.flags.utf8_mode:
